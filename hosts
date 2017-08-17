@@ -1,0 +1,52 @@
+# Copyright (c) 1993-2009 Microsoft Corp.
+#
+# This is a sample HOSTS file used by Microsoft TCP/IP for Windows.
+#
+# This file contains the mappings of IP addresses to host names. Each
+# entry should be kept on an individual line. The IP address should
+# be placed in the first column followed by the corresponding host name.
+# The IP address and the host name should be separated by at least one
+# space.
+#
+# Additionally, comments (such as these) may be inserted on individual
+# lines or following the machine name denoted by a '#' symbol.
+#
+# For example:
+#
+#      102.54.94.97     rhino.acme.com          # source server
+#       38.25.63.10     x.acme.com              # x client host
+
+# localhost name resolution is handled within DNS itself.
+#	127.0.0.1       localhost
+#	::1             localhost
+
+127.0.0.1       localhost
+127.0.0.1       www.feyarose.dev
+127.0.0.1       feyarose.dev
+127.0.0.1       tsarvoyages.dev
+127.0.0.1       alarme.dev
+127.0.0.1       fte.devs
+127.0.0.1       ctn.dev
+127.0.0.1       weiss.dev
+127.0.0.1       weisscadef.dev
+127.0.0.1       ccifr.dev
+127.0.0.1       ccifr.com
+127.0.0.1       ccifr.app
+127.0.0.1       jacob.dev.fr
+127.0.0.1       jacob.dev.com
+127.0.0.1       jacob.dev.es
+127.0.0.1       jacob.dev.ma
+127.0.0.1       jacob.dev.ru
+127.0.0.1       jacobdelafon.dev
+#127.0.0.1       cadaff.dev
+127.0.0.1       mice.dev
+127.0.0.1       krutoy.dev
+127.0.0.1       heres.dev
+127.0.0.1       kolobok.dev
+127.0.0.1       rozblog.dev
+127.0.0.1       jacobdelafon.dev/carnet-elegance
+127.0.0.1       jacobdelafon-ru.dev/законы-элегантности
+127.0.0.1       jacobdelafon-ru.dev
+127.0.0.1       jacobdelafon-es.dev/inspiracion
+127.0.0.1       jacobdelafon-es.dev
+127.0.0.1       cc.dev

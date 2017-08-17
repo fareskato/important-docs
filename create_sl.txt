@@ -1,0 +1,8 @@
+create symbolic link (folders)
+
+ln -s blog_france/ ./russian 
+
+blog_france/ : the target directory
+russian : the link(new folder if not exists)
+
+./ befor russian : means the current directory

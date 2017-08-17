@@ -1,0 +1,19 @@
+Migrate from svn to git:
+First of all U have to create Ur group and projeact and add users on Ur git then :
+
+01- log to windows bash C directory : cd /mnt/c
+02- install git and ruby
+03- install svn2git : gem install svn2git
+04- install subversion : sudo apt-get install subversion
+05- install git-svn : sudo apt-get install git-svn
+06- create folder : for example svngitmigration in C directory and navigate to it
+07- create authors.txt in this directory
+08- clone the repo from git git clone <your repo on git> : this will craete folder then navigate to this folder
+09- run this command : svn2git https://svn.example.com/path/to/repo --authors /path/to/authors.txt
+10- git push --all origin
+11- git push --tags origin
+
+now U should have everything on Ur gitlab
+Enjoy! 
+
+

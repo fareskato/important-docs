@@ -1,0 +1,7 @@
+clone specific branch: 
+
+01- git init 
+02- git clone --depth=100 path_to_repo --branch branch_name   => will get repo folder
+03- cd to the repo folder
+04- git fetch --unshallow
+05- git fetch --all

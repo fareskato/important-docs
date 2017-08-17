@@ -1,0 +1,31 @@
+1.	Anything in the master branch is deployable : the master branch should be bug-free, no actually push on it
+2.	To implement a new feature or bug fix create a new feature branch out of master based on the redmine issue. 
+Ex : git checkout -b bugfix-XXX master
+Ex : git checkout -b feature-XXX master
+3.	Commit all your changes to the branch and push on the repo
+4.	When you need feedback/review/help, open a pull request
+5.	After testing your branch and the development branch has been reviewed on the dev server, merge it into master
+6.	Switch the dev server to the master branch
+7.	When doing a release create a tag off of master with a release version number starting at 1 . Ex : release-1, release-32
+Remarks : 
+-	Basic folder structure will mostly stay the same as for svn with : 
+o	Db          
+o	Docs
+o	Public
+-	On production servers we push only release tags.
+-	For projects were the production server is not under version control (JD, Weiss), we export the delta of files between 2 release tags.
+-	Each gitlab project is linked to a redmine project, so you can use keywords on your commit messages. Examples : 
+o	“this commit refs #223” -> will make a ref to redmine issue 223
+o	“this commit  refs #555 @3.25h” -> will make a ref to redmine issue 555 and log 3.25h of your time on this issue
+o	More info on refs : http://www.redmine.org/projects/redmine/wiki/RedmineSettings#Referencing-issues-in-commit-messages
+-	
+
+During the transition period, the dev versions of the projects will need to be re-configured to be using git over svn. Which means the following procedure :
+-	Ssh to the dev server with the right user
+-	Svn st on public_html to check which unversionned files that were modified or uploaded locally. Back them up if necessary
+-	Create a new public_html_git folder and git checkout the project’s repo.
+-	Reconfigure database accesses and needed config files for the project.
+-	Rename public_html in public_html_svn
+-	Rename public_html_git in public_html
+-	Transfer backed up files if necessary.
+-	Test dev website.

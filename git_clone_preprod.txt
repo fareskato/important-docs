@@ -1,0 +1,50 @@
+01- in the root : git init
+02- git remote add -f origin http://fkato@gitlab.altimarussia.com:8081/feyarose/rozblog.git 
+03- git config core.sparseCheckout true
+04- echo "public/" >> .git/info/sparse-checkout
+05- git pull origin master
+06- check the branch : git branch => should show just master branch
+07- switch to Ur branch: git checkout branch_name
+
+
+##############################
+
+Change the permission:
+# for directories:
+find . -type d -print0 | xargs -0 chmod 0755
+# for files:
+find . -type f -print0 | xargs -0 chmod 0644
+
+
+
+
+########################################
+after that to get each development branch
+
+git branch -f bugfix-xxxx origin/bugfix-xxxx
+
+if U are in development branch and U want to get from the repo child branch of development :
+01- update Ur branch via git pull
+02-git checkout bugfix-xxxx
+
+
+
+After that check then merg then pull the master on the production server	
+
+
+
+
+/********************************  Clone Reposotory   *******************************/
+git init
+git remote add origin PATH/TO/REPO or git remote add -f origin http://fkato@PATH/TO/REPO
+git fetch
+git checkout -t origin/master
+
+it will get all files in the master branch
+
+
+
+
+
+IMPORTANT:
+git remote set-url origin https://fkato@gitlab.altimarussia.ru/weiss/weiss-professionnel.fr.git
